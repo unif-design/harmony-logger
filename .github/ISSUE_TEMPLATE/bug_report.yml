@@ -1,0 +1,45 @@
+# 根据 https://github.com/unif-design/.github/blob/2a6e991697447f91127664eafb7aea80d5751194/templates/ISSUE_TEMPLATE/bug_report.yml 做原生鸿蒙适配。
+name: 缺陷报告
+description: 报告可复现的仓库、文档或已实现功能问题。
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请区分源码、HAR 消费与设备运行问题，说明采用修订、日志生命周期及可复现步骤。
+        安全漏洞请按 SECURITY.md 私密报告；不要提交凭据、令牌或未脱敏业务数据。
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前检查
+      options:
+        - label: 我已检查现有 Issue，未找到相同问题。
+          required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: 问题概述
+      description: 说明预期行为、实际行为及影响。
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: 受影响修订
+      description: 填写提交 SHA 或分支；只有实际采用已发布包时才填写包版本。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境信息
+      description: 按问题填写系统、HarmonyOS/API、DevEco Studio、Hvigor、OHPM 或 CI 环境；文档问题可注明不适用。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现步骤与证据
+      description: 提供最小复现步骤、实际命令及脱敏结果，必要时附复现仓库或截图。
+    validations:
+      required: true

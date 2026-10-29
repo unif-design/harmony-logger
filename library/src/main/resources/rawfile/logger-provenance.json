@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/unif-design/react-native-logger",
+  "revision": "ca8bda0d279a1ec07016a0feb6355c890cd7a3cc",
+  "version": "0.1.3",
+  "status": "adopted-main",
+  "roots": [
+    "src/index.ts",
+    "src/files/createLogFileStore.ts"
+  ],
+  "generatorSha256": "f477142cb1fa3fb0dae8336f4960be537dc6f2628476839aed9779095fd46797",
+  "inputs": [
+    {
+      "path": "src/backend/index.ts",
+      "sha256": "ec01e5e82b808f36e5793188bf1a4c7b64fadc23f2080197d189ddf91e29cdf4",
+      "target": "library/src/main/ts/generated/backend/index.ts",
+      "targetSha256": "5c46417253f1742822a77c13f654e2d572e35a61ad2e866c9f20f76c9a38501d"
+    },
+    {
+      "path": "src/backend/logger.ts",
+      "sha256": "f6f2cb3374a502089277a495914ef11bc0fd384933f55202251f2a862fff2b42",
+      "target": "library/src/main/ts/generated/backend/logger.ts",
+      "targetSha256": "86734ee71788651fe1b7f7beae9ec51e0b4c6baaa84abf3b7786e40b9b853140"
+    },
+    {
+      "path": "src/backend/transports/console.ts",
+      "sha256": "08337e6938e0d62c6547528f5f7b998d4d88c33192916682ec7425fea534cae5",
+      "target": "library/src/main/ts/generated/backend/transports/console.ts",
+      "targetSha256": "20074f9385f52822de0a5070f67ce95ea2c1f92b3a103be1f88e0f5073af76bd"
+    },
+    {
+      "path": "src/backend/types.ts",
+      "sha256": "cb924929ec86bfc14c564546539fe8743260419ceb83f7f9b36c8b2392e32924",
+      "target": "library/src/main/ts/generated/backend/types.ts",
+      "targetSha256": "e6ae6428c51744abf6d94f8c5e471145a9f49b0a1a545bed53c3135bc055bc72"
+    },
+    {
+      "path": "src/constants.ts",
+      "sha256": "4e41ef8b0bbe847d408b37cda7909d48fcff56fa0bccdb90582852c9ccfca296",
+      "target": "library/src/main/ts/generated/constants.ts",
+      "targetSha256": "1b326aec407709caccbf677e33dfa5b6739279ebc22bcb95d08e5653bec5ef17"
+    },
+    {
+      "path": "src/createLogger.ts",
+      "sha256": "ff6d953ca9d081ca5e74f28a277ccba8106193f1e3379d3884b5fcee9cae2ea5",
+      "target": "library/src/main/ts/generated/createLogger.ts",
+      "targetSha256": "96c6f4ebaed1325336971e240642f679a4baead1cc3110358a31d30eaa5870cc"
+    },
+    {
+      "path": "src/createOperationContext.ts",
+      "sha256": "6ec47385456c9ac46ad712caac80e31d1d214eff06a2249e87ba901629d5425b",
+      "target": "library/src/main/ts/generated/createOperationContext.ts",
+      "targetSha256": "aff9b03e2c7d511865bf2dd246c28c7a77d9caf8e3574acdf4013330ec29d57b"
+    },
+    {
+      "path": "src/files/constants.ts",
+      "sha256": "886d26bcabc033483ffa3f75d700a0dbe32123c4de11366e7e2fdb9268737d64",
+      "target": "library/src/main/ts/generated/files/constants.ts",
+      "targetSha256": "fe9f9ebad27d4ae4d483dded4549f9ccbe3d97c7fc2091b505c417f6a44e3cd3"
+    },
+    {
+      "path": "src/files/createLogBuffer.ts",
+      "sha256": "ec8f2ef40e616b401d1fd80041a6c92e2f9ad12ab501546eef35e250019e5323",
+      "target": "library/src/main/ts/generated/files/createLogBuffer.ts",
+      "targetSha256": "eba192867be6db77afe6ec154d5cdd962fb7dabc30fecc44f1c3b4180b0451c7"
+    },
+    {
+      "path": "src/files/createLogFileError.ts",
+      "sha256": "1ed368e3683d29aa4edd8feefdfb1bc128ee0b6719a759a871268bd0f7772b0c",
+      "target": "library/src/main/ts/generated/files/createLogFileError.ts",
+      "targetSha256": "0717c8b0ed93cb157034c86b96357b9a5a27598b504e966091e4251770fb73d1"
+    },
+    {
+      "path": "src/files/createLogFileStore.ts",
+      "sha256": "b773f51bd0d12119d30f5c0dbd75f813aeb8a299b0bc71ead54c05b9ffa04c4a",
+      "target": "library/src/main/ts/generated/files/createLogFileStore.ts",
+      "targetSha256": "e5c1d3f7da9633f037cec42999601dc33904cfdb5d74e4a932c0f98c6dd211d1"
+    },
+    {
+      "path": "src/files/createLogSnapshotFile.ts",
+      "sha256": "0bbb443c022a128d9c28507ad787050a5ce8e3f0f25ae3d4d633c77ae6022170",
+      "target": "library/src/main/ts/generated/files/createLogSnapshotFile.ts",
+      "targetSha256": "9e156931e9de80ed859e9faa8071c666dbf8c6b28acd3f95a7e2d9054279e1ff"
+    },
+    {
+      "path": "src/files/fileNames.ts",
+      "sha256": "7fd3821349ef28618a57a39fd5718fbed5543ab55dab1cd51cf33dda90c9e0e2",
+      "target": "library/src/main/ts/generated/files/fileNames.ts",
+      "targetSha256": "de4630bcef0d6c9f7111ce0185fcfc4f62155bb95381ec7445a1f393a31ec29d"
+    },
+    {
+      "path": "src/files/getLogFileScope.ts",
+      "sha256": "1e397e0603a0aac5656525c5dedf1aaed238d2f619fc3828ec9dc66bffbfa2cf",
+      "target": "library/src/main/ts/generated/files/getLogFileScope.ts",
+      "targetSha256": "7835965ec4ff532599d9b291e7c8c40f087c4bb52fae9402401066d8184cb7b7"
+    },
+    {
+      "path": "src/files/readLogSnapshotContent.ts",
+      "sha256": "ca33c3d0d0d45b0eeded3d0514b1cb61b8dcc5000dd902c8b490bff59a103609",
+      "target": "library/src/main/ts/generated/files/readLogSnapshotContent.ts",
+      "targetSha256": "3c6960041809dbd1b544d88bc8d9251d13cb9c2dac25c6bfdc943c24c35426bf"
+    },
+    {
+      "path": "src/files/types.ts",
+      "sha256": "0922cbcd7b8ce3962b36906a2c35a4abfe0cda4160e15ed29914c2f98f1b75a2",
+      "target": "library/src/main/ts/generated/files/types.ts",
+      "targetSha256": "309c7ac33c322e248c86bc8250f3c2f45840273c5c36b83521ca34c4498d0576"
+    },
+    {
+      "path": "src/formatLogLine.ts",
+      "sha256": "8f0219fcfc3b583233b09465a5ade926108f520b7d2db597715ef15374e7cd4f",
+      "target": "library/src/main/ts/generated/formatLogLine.ts",
+      "targetSha256": "051d5bcc0cd77d0aa87a838a305eb46f89d1db2cb1ad08cc9379a780b81cc9e2"
+    },
+    {
+      "path": "src/getFailureDiagnostics.ts",
+      "sha256": "e1ba41d6e35bb73cdbb54b6bb471788adfaebf2436375ffe2982cb5ec8df6dfe",
+      "target": "library/src/main/ts/generated/getFailureDiagnostics.ts",
+      "targetSha256": "fd8d1fc2e2937b1d161b80740c053b5b277450e22e5b632eadaa6d64d71c253b"
+    },
+    {
+      "path": "src/getLogRetentionPolicy.ts",
+      "sha256": "673b2711a1e7b43eddb02996ba8321e795c40ccabe1c9c9b5cf06774145c19da",
+      "target": "library/src/main/ts/generated/getLogRetentionPolicy.ts",
+      "targetSha256": "45cff78b73e18c2d6a900f398b4ec34ab3179742b791cd2051a845e86871c6c5"
+    },
+    {
+      "path": "src/getLogStatus.ts",
+      "sha256": "da23186e61bf54e815178bf85988c928e6cff4941c95762d509181fae767f187",
+      "target": "library/src/main/ts/generated/getLogStatus.ts",
+      "targetSha256": "921e4bcd294740e2758b4f1ad3514a9704ef0c792324f829386e209d4ba13afa"
+    },
+    {
+      "path": "src/index.ts",
+      "sha256": "08d067c3d58239da4a4c86b08139f11b19b83399497d25ef3248957f8bd68383",
+      "target": "library/src/main/ts/generated/index.ts",
+      "targetSha256": "a606bbabb21a4dc31ccabd2326a9e5ce94c206a1ee8183fb206b48c7c0cccde7"
+    },
+    {
+      "path": "src/normalization/constants.ts",
+      "sha256": "4b0193b0227c61f26394206a602a32cf9e6291cc65141af628e059e3fb550d15",
+      "target": "library/src/main/ts/generated/normalization/sourceConstants.ts",
+      "targetSha256": "1224eaefc9fee7ee36d61e3bf952c8ecad1644d78db84f165628cb12fac594e0"
+    },
+    {
+      "path": "src/normalization/getLogSource.ts",
+      "sha256": "7ec77daf45fe23ac7b7eeb308be1ae3a2dba0283ddf5dfa1519ed5ab7c212fb9",
+      "target": "library/src/main/ts/generated/normalization/getLogSource.ts",
+      "targetSha256": "1f199cbcbb3b64efeec7ae96e06d320451791de92106c0582884f0dd4ec1a0d6"
+    },
+    {
+      "path": "src/normalization/getLogStackSource.ts",
+      "sha256": "cea926599160d58ad18b6b995b654fd4bbe8245f47d0cd4e7e49082b31860a1e",
+      "target": "library/src/main/ts/generated/normalization/getLogStackSource.ts",
+      "targetSha256": "4e2d35952bfbd873f05ee7ca6e4feaf435243d3b2414fd47a23fc41cf73463e7"
+    },
+    {
+      "path": "src/normalization/isSensitiveDiagnosticField.ts",
+      "sha256": "abab608328f6037186c4799c1d6334c64c1dc251053a4753db361f539a0fc0fb",
+      "target": "library/src/main/ts/generated/normalization/isSensitiveDiagnosticField.ts",
+      "targetSha256": "946b3892afee5cabc178c6115128296196c41f2d27c83685e93890c699ee06e8"
+    },
+    {
+      "path": "src/normalization/normalizeLogError.ts",
+      "sha256": "f58c0116d75a580c2bb9e4a4b7204e41832fd0addcdd646d6dffcdfa8d904937",
+      "target": "library/src/main/ts/generated/normalization/normalizeLogError.ts",
+      "targetSha256": "4b108bac2c4f6c7a603e28dd89d4dc03e811275ed63dc141f5a547cef8deefd6"
+    },
+    {
+      "path": "src/normalization/normalizeLogRecord.ts",
+      "sha256": "9047a5895118002b3b14760cdb5a93e1ab4cc69933ce942668a83acb73f78cfb",
+      "target": "library/src/main/ts/generated/normalization/normalizeLogRecord.ts",
+      "targetSha256": "1d5c2afba3e38d3d63003d75343e2d1f7ed24e01ed6c450c670d71a2247ec460"
+    },
+    {
+      "path": "src/normalization/normalizeLogSource.ts",
+      "sha256": "17f77a80a08f9cf3371c07b405e8510dbdcd21eb0e7d345285a62ae614d606e2",
+      "target": "library/src/main/ts/generated/normalization/normalizeLogSource.ts",
+      "targetSha256": "f089b3cced44016f7a78f2769878d80634071162775cf330f27a4ed30fdbe96b"
+    },
+    {
+      "path": "src/normalization/readLogErrorName.ts",
+      "sha256": "a486af7b3d0f1721bbb84a622822e89f7c0fd363e67c6f84f302d9d3fc70a48e",
+      "target": "library/src/main/ts/generated/normalization/readLogErrorName.ts",
+      "targetSha256": "18ad745a6c2d2557c481577a7467b8996364404896093949ddfb5e2f1d102686"
+    },
+    {
+      "path": "src/normalization/readLogErrorStack.ts",
+      "sha256": "f1b323befec58c5f60c146e9eb78e514ff15ac8fcd7572c65e4e00ed90626f5b",
+      "target": "library/src/main/ts/generated/normalization/readLogErrorStack.ts",
+      "targetSha256": "c57bb2c00d3f6318cf24fdb2d560365238ed6b11e28629bc15c24dc76cb75382"
+    },
+    {
+      "path": "src/normalization/readLogProperty.ts",
+      "sha256": "b83b9a9029a54968c09fbc64963bbd9190246741b9242d86bbe4963b720b490d",
+      "target": "library/src/main/ts/generated/normalization/readLogProperty.ts",
+      "targetSha256": "ebdbd163f9a91e214702d1825d537105928b8cfc6d42a32ccdbaefe2e1e93098"
+    },
+    {
+      "path": "src/normalization/redactDelimitedText.ts",
+      "sha256": "acdf7961417feea3cac70252b23cec96ea2b6f163f89a8e9527d7f5ef27252a1",
+      "target": "library/src/main/ts/generated/normalization/redactDelimitedText.ts",
+      "targetSha256": "90080341a0a49007914a5cf510564f04049f457e4cdaea606b6956fcd295fa6c"
+    },
+    {
+      "path": "src/normalization/redactDiagnosticText.ts",
+      "sha256": "a282692f82c1c8b716b6a7530b858f21941b5569831e5a636a6ed689b63d26a6",
+      "target": "library/src/main/ts/generated/normalization/redactDiagnosticText.ts",
+      "targetSha256": "d943b2016a0e2b3d2b40ce8d28c4138132585b97d75aa76427f494fe25e5dd44"
+    },
+    {
+      "path": "src/normalization/redactLogStack.ts",
+      "sha256": "3418938af03f91c4625529641bddc1046d68854e1fb256dfeb6538892f46b6c0",
+      "target": "library/src/main/ts/generated/normalization/redactLogStack.ts",
+      "targetSha256": "e97af63f3952b9986ec6363dd74958792e29a80364b3b4ec066e79f9e9cbbe30"
+    },
+    {
+      "path": "src/normalization/redactLogText.ts",
+      "sha256": "a47d5db8608942f0daa0fa7f0f4f14c622b799d9ad054e4ebcf11b634cd739c4",
+      "target": "library/src/main/ts/generated/normalization/redactLogText.ts",
+      "targetSha256": "eb8fe67870e1aac8887c18a73569c6963ce883fc4f4ab438cda25a3e8329423f"
+    },
+    {
+      "path": "src/normalization/redactSensitiveText.ts",
+      "sha256": "d90d937e5cfc4d8f22d2b0720e6992d0fc4543dc5cedcc894f9168238de2c725",
+      "target": "library/src/main/ts/generated/normalization/redactSensitiveText.ts",
+      "targetSha256": "623bfba83661220bf84893c77fd034bdb3810410b82f778db48bd0d2f4041e3c"
+    },
+    {
+      "path": "src/normalization/types.ts",
+      "sha256": "8eb41cddceaf7a8a776e9cbd5bfcdf8edd166907e8de2191908f9c88c0d5faf2",
+      "target": "library/src/main/ts/generated/normalization/types.ts",
+      "targetSha256": "268d742c6106db508bcb775d2f253fb17ab000b7b7663b39c9ed914d85b0a9eb"
+    },
+    {
+      "path": "src/prepareLoggingPolicy.ts",
+      "sha256": "9164ce8919c4497e3f03bd67195b8a84efae5faccb67aff3bec2f63f93b49b46",
+      "target": "library/src/main/ts/generated/prepareLoggingPolicy.ts",
+      "targetSha256": "7e2b79fba4c5e0382aee9c5b5f26357a386c6e7f8c4340f8783d847180e701ea"
+    },
+    {
+      "path": "src/runtime/captureConsole.ts",
+      "sha256": "875f50985ef8d0706f0cecd256a710a8ec88fed2530f66362cc450dc4da9c644",
+      "target": "library/src/main/ts/generated/runtime/captureConsole.ts",
+      "targetSha256": "92c6b91ec2893eaa4a4ffd63e4d29ab0244038599f0b27ee0cb26be99b6818ab"
+    },
+    {
+      "path": "src/runtime/installLogging.ts",
+      "sha256": "d815f9d14156f4e8d7f83107459d7b77bc35e84a668a3a24783db65e34bb3ede",
+      "target": "library/src/main/ts/generated/runtime/installLogging.ts",
+      "targetSha256": "7e7f4b885bc6555eaa9f911c8c7f7c570880f3a44007f822c1c9738720646688"
+    },
+    {
+      "path": "src/runtime/types.ts",
+      "sha256": "594a84eff5f65150523b14f124b6fc51312d710a1b571ed9a037979d4713c297",
+      "target": "library/src/main/ts/generated/runtime/types.ts",
+      "targetSha256": "df630a2b44c15d240f0fc4b4a785bc2a247ec456dfa0749599db8d0d90132743"
+    },
+    {
+      "path": "src/serializeLogRecord.ts",
+      "sha256": "41d0632a36c1a4aeed68f0ce72a1297a472cf87a3326e527855f495a28687cb5",
+      "target": "library/src/main/ts/generated/serializeLogRecord.ts",
+      "targetSha256": "e3703410caa75dbf4e080c51944c31d230c169d3b9c3778b85762e0a9ecc40fa"
+    },
+    {
+      "path": "src/state.ts",
+      "sha256": "15a7eaa75ff69abde6c421eb5f330ab3f96c743f5924258272aef0450b905176",
+      "target": "library/src/main/ts/generated/state.ts",
+      "targetSha256": "970136a93aef24fc5f5ad8699ef271b34cad89f9d85dd187ac186fb44014d932"
+    },
+    {
+      "path": "src/types.ts",
+      "sha256": "f5f4361e40eb0850ee3989208299c88a5d54e325ae5e4c643d4fc6d7ffc0fc25",
+      "target": "library/src/main/ts/generated/types.ts",
+      "targetSha256": "99afe827acd33d6463bad667bbd66cd86bea46974c215b8afaa3d5fa91a20d61"
+    },
+    {
+      "path": "src/utf8ByteLength.ts",
+      "sha256": "463ea46254a669d946926ced596210817972c5cbc9b4e7d29d6a19fe72b0b439",
+      "target": "library/src/main/ts/generated/utf8ByteLength.ts",
+      "targetSha256": "451e40560c634a79cedc2d28429345b13058fe6450b69f18d9b57762a5f617cb"
+    }
+  ],
+  "nativeFiles": [
+    {
+      "path": "library/src/main/ts/native/createLogFiles.ts",
+      "sha256": "b71500bc9d2ff74e789fad9bf66aa2104c5d30a39c9235013415581fbb9f40bc"
+    },
+    {
+      "path": "library/src/main/ts/native/diagnosticPatterns.ts",
+      "sha256": "7a461d5635aaee2710b69d711d02f28e153a0da58f608f31adb9a86f7c03d80c"
+    },
+    {
+      "path": "library/src/main/ts/native/fileFailure.ts",
+      "sha256": "34c3311168a799f3bdf271d1d757a538dc0c66526f87ec7a0bcc735b010f8f3a"
+    },
+    {
+      "path": "library/src/main/ts/native/fileUri.ts",
+      "sha256": "d3db05da18e587e4e097cf6213f3b22904bed7a6bb2ae71ab2e1af3aa38d8804"
+    },
+    {
+      "path": "library/src/main/ts/native/installLogging.ts",
+      "sha256": "edae54237af5cd3ceefff541afea2f7f10783f2a884423b4dd9a9e4f369b073c"
+    },
+    {
+      "path": "library/src/main/ts/native/ownProperty.ts",
+      "sha256": "054c650fd243c0579bb3e0ec1a2fe681fba4f806cfd414093b005da797428178"
+    },
+    {
+      "path": "library/src/main/ts/native/sha256.ts",
+      "sha256": "e64f57f9b581bc32fa010a3ee52b9bb3ed20ac80f1fbab954ef3f44d081bedc1"
+    },
+    {
+      "path": "library/src/main/ts/native/sumBy.ts",
+      "sha256": "a1024265c74f6424c9268aff804ea23d83c6e50227c6bcea437130a420bfda96"
+    },
+    {
+      "path": "library/src/main/ts/native/types.ts",
+      "sha256": "2d343dc313e8cd0db88140fb6d0d8fec0519112bd77fcbec0bdc6ac3b18c8898"
+    },
+    {
+      "path": "library/src/main/ts/native/utf8.ts",
+      "sha256": "4d9ec10a3ac34bb571804349a688ab7a73d6c4ebca464a9bad2aad06b5eb16fa"
+    }
+  ],
+  "documents": [
+    {
+      "path": "docs/FORMAT.md",
+      "sha256": "b3a6342f53939eee277d290e89a74314f70a54248dd81f7dc275354a6674bd10",
+      "target": "library/FORMAT.md",
+      "targetSha256": "ac80da67ac964100aea71c4a77757880a2f21037e8767f3e6c2a5e42aa0fc758"
+    }
+  ]
+}
