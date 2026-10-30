@@ -1,0 +1,7 @@
+{
+  "name": "logger-example",
+  "version": "0.1.0",
+  "dependencies": {
+    "@unif/harmony-logger": "file:../library"
+  }
+}

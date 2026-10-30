@@ -1,0 +1,25 @@
+{
+  "apiType": "stageMode",
+  "buildOption": {
+    "arkOptions": {
+      "obfuscation": {
+        "ruleOptions": {
+          "enable": false
+        }
+      }
+    },
+    "packingOptions": {
+      "asset": {
+        "include": [
+          "FORMAT.md",
+          "NOTICE"
+        ]
+      }
+    }
+  },
+  "targets": [
+    {
+      "name": "default"
+    }
+  ]
+}

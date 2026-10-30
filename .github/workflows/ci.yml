@@ -1,0 +1,72 @@
+name: Logger 检查
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: logger-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  actionlint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - name: 检查工作流
+        env:
+          ACTIONLINT_VERSION: 1.7.12
+        run: |
+          curl -sSfL "https://github.com/rhysd/actionlint/releases/download/v${ACTIONLINT_VERSION}/actionlint_${ACTIONLINT_VERSION}_linux_amd64.tar.gz" | tar -xz actionlint
+          ./actionlint -color -shellcheck=shellcheck
+
+  core-and-adapters:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: 检出鸿蒙库
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: 取得固定 RN 修订
+        id: source
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const { revision } = require('./logger-source.json');
+          if (!/^[a-f0-9]{40}$/.test(revision)) throw new Error('Invalid source revision');
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `revision=${revision}\n`);
+          NODE
+      - name: 检出采用的 RN 源
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          repository: unif-design/react-native-logger
+          ref: ${{ steps.source.outputs.revision }}
+          path: .source/react-native-logger
+          persist-credentials: false
+      - name: 安装生成工具
+        run: npm ci --ignore-scripts
+      - name: 安装源回归工具
+        working-directory: .source/react-native-logger
+        run: |
+          corepack enable
+          yarn install --immutable --mode=skip-build
+      - name: 校验生成与原生适配
+        run: |
+          npm run check:core -- --source-root .source/react-native-logger
+          npm test
+      - name: 回归共享核心
+        run: npm run test:source-core -- --source-root .source/react-native-logger
